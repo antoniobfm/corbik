@@ -1,0 +1,34 @@
+version: '3.9'
+
+services:
+ db:
+  container_name: db
+  image: postgres
+  ports:
+   - "5432:5432"
+  environment:
+   POSTGRES_DB: corbik
+   POSTGRES_USER: postgres
+   POSTGRES_PASSWORD: docker
+  volumes:
+   - ./pgdata:/var/lib/postgresql/data
+  restart: unless-stopped
+
+ turbo:
+  container_name: turbo
+  build:
+    context: .
+    dockerfile: dev.Dockerfile
+  ports:
+   - "3000:3000"
+   - "3333:3333"
+  env_file:
+   - .env
+  volumes:
+   - ./:/app
+   - /app/node_modules/
+  restart: on-failure
+
+networks:
+  turbo-network:
+    driver: bridge
