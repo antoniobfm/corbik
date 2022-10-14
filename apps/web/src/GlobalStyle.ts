@@ -30,8 +30,8 @@ export default createGlobalStyle`
 
 		--corbik-green: #27AE60;
 
-		--high-emphasis: #DEDEDE;
-		--medium-emphasis: #999999;
+		--high-emphasis: #E4E3E8;
+		--medium-emphasis: #9D99AD;
 		--low-emphasis: #616161;
 		--disabled-color: #333333;
 
@@ -43,20 +43,15 @@ export default createGlobalStyle`
 	}
 
   h1 {
-    font-size: 1.999rem;
+    font-size: 2.369rem;
   }
 
   h2 {
-    font-size: 2.827rem;
+    font-size: 1.777rem;
   }
 
   h3 {
-    font-size: 1.414rem;
-  }
-
-  p {
-    font-size: 1rem;
-    line-height: 17px;
+    font-size: 1.333rem;
   }
 
   h4 {
@@ -64,7 +59,12 @@ export default createGlobalStyle`
   }
 
   h5 {
-    font-size: 0.707rem;
+    font-size: 0.75rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 17px;
   }
 
   a {
@@ -73,7 +73,7 @@ export default createGlobalStyle`
   }
 
   button {
-    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-family: 'futura-pt', Arial, Helvetica, sans-serif;
   }
 
 	body:not(.user-is-tabbing) button:focus,

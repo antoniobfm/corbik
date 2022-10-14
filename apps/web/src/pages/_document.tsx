@@ -40,10 +40,7 @@ export default class MyDocument extends Document {
 					<meta charSet="UTF-8" />
 					<meta name="theme-color" content="#0d0d0d" />
 
-					<link
-						href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-						rel="stylesheet"
-					/>
+          <link rel="stylesheet" href="https://use.typekit.net/vwf4vfo.css" />
 				</Head>
 				<body>
 					<Main />
