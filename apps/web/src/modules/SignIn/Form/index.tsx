@@ -15,16 +15,17 @@ export const Form: React.FC = () => {
   return (
     <Container>
       <Input 
-        type="email" 
-        name="email" 
+        type="email"
+        name="email"
+        label="Email" 
         placeholder="Email" 
         control={control} 
         icon={<SmsOutlined />} 
       />
-
       <Input 
         type="password" 
         name="password" 
+        label="Password" 
         placeholder="Password"
         control={control}
         icon={<KeyOutlined />}

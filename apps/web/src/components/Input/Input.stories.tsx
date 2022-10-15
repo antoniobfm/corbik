@@ -50,6 +50,7 @@ const Template: ComponentStory<typeof Input> = (args) => {
 export const Primary = Template.bind({});
 export const Filled = Template.bind({});
 export const Empty = Template.bind({});
+export const WithLabel = Template.bind({});
 
 Primary.args = {
   type: 'text',
@@ -66,5 +67,12 @@ Filled.args = {
 Empty.args = {
   type: 'text',
   name: 'test',
+  placeholder: 'Enter your email'
+};
+
+WithLabel.args = {
+  type: 'text',
+  name: 'name',
+  label: 'Name',
   placeholder: 'Enter your email'
 };

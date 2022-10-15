@@ -6,7 +6,18 @@ interface Props {
   hasIcon: boolean;
 }
 
-export const Container = styled.div<Props>`
+export const Container = styled.div`
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+`;
+
+
+export const InputBox = styled.div<Props>`
   width: 100%;
 
   display: flex;
@@ -79,3 +90,4 @@ export const Container = styled.div<Props>`
     }
   `}
 `;
+
