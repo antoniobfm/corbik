@@ -15,7 +15,7 @@ export default createGlobalStyle`
   body {
     background: #0A0A0B;
     color: rgba(255, 255, 255, 0.95);
-    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-family: 'futura-pt', Arial, Helvetica, sans-serif;
 
 		::-webkit-scrollbar {
 			display: none;
@@ -74,7 +74,7 @@ export default createGlobalStyle`
     text-decoration: none;
   }
 
-  button {
+  button, input, textarea, select {
     font-family: 'futura-pt', Arial, Helvetica, sans-serif;
   }
 

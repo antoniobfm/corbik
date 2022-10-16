@@ -16,7 +16,6 @@ export const Container = styled.div`
   gap: 16px;
 
   label {
-    font-family: 'Futura PT';
     font-style: normal;
     font-weight: 500;
     font-size: 18.66px;
