@@ -20,7 +20,7 @@ export const Input: React.FC<InputProps> = ({ control, name, label, icon, ...res
       control={control}
       render={({ field }) => (
         <Container>
-          {label && <h3>{label}</h3>}
+          {label && <label>{label}</label>}
           <InputBox
             onClick={() => inputRef.current!.focus()}
             isFocused={isFocused}

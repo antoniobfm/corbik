@@ -14,6 +14,23 @@ export const Container = styled.div`
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
+
+  label {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.66px;
+    line-height: 111.53%;
+    /* identical to box height, or 21px */
+
+    letter-spacing: -0.02em;
+
+    /* Purple Primary Text */
+
+    color: #E4E3E8;
+
+    text-shadow: 0px 0px 77px #E4E3E8;
+  }
 `;
 
 
@@ -39,8 +56,10 @@ export const InputBox = styled.div<Props>`
     border: 1px solid #fff;
   } */
 
-  svg > path{
-    stroke: #E4E3E8;
+  svg {
+    stroke: var(--medium-emphasis);
+
+    transition: 0.3s all;
   }
 
   input {
@@ -70,24 +89,34 @@ export const InputBox = styled.div<Props>`
   :hover {
     border-color: var(--medium-emphasis);
     cursor: text;
+
+    svg {
+      stroke: var(--high-emphasis);
+    }
   }
 
   ${props =>
     props.isFocused && css`
       border: 1px solid var(--high-emphasis);
 
-    :hover {
-      border-color: var(--high-emphasis);
-    }
+      svg {
+        stroke: var(--high-emphasis);
+      }
+
+      :hover {
+        border-color: var(--high-emphasis);
+      }
   `}
 
   ${props =>
     props.isFilled && css`
-      border: 1px solid var(--high-emphasis);
+      svg {
+        stroke: var(--high-emphasis);
+      }
 
-    :hover {
-      border-color: var(--high-emphasis);
-    }
+      :hover {
+        border-color: var(--high-emphasis);
+      }
   `}
 `;
 
