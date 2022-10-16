@@ -1,3 +1,4 @@
+import { Button } from '@/components/Button';
 import { KeyOutlined, SmsOutlined } from '@/components/Icons';
 import { Input } from '@/components/Input';
 import { Lock, Sms } from 'iconsax-react';
@@ -12,12 +13,16 @@ export const Form: React.FC = () => {
     password: string;
   }>();
 
+  const onSubmit = handleSubmit((data) => {
+    console.log(data);
+  });
+
   return (
-    <Container>
+    <Container onSubmit={onSubmit}>
       <Input 
         type="email"
         name="email"
-        label="Email" 
+        label="Email address" 
         placeholder="Email" 
         control={control} 
         icon={<SmsOutlined />} 
@@ -30,6 +35,7 @@ export const Form: React.FC = () => {
         control={control}
         icon={<KeyOutlined />}
       />
+      <Button type="submit" text="SIGN IN" />
     </Container>
   )
 }
