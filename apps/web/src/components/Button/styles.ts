@@ -14,6 +14,8 @@ export const Container = styled.button<IProps>`
   padding: 19px 0;
 
   background: linear-gradient(91.34deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #4978D5;
+  border: none;
+  outline: none;
   border-radius: 16px;
 
   font-family: 'futura-pt';
