@@ -1,6 +1,10 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const Container = styled.button`
+interface IProps {
+  isLoading?: boolean;
+}
+
+export const Container = styled.button<IProps>`
   width: 100%;
 
   display: flex;
@@ -33,4 +37,12 @@ export const Container = styled.button`
     background: linear-gradient(91.34deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #5A8DE5;
     cursor: pointer;
   }
+
+  ${({ isLoading }) => isLoading && css`
+    opacity: 0.5;
+
+    :hover {
+      cursor: not-allowed;
+    }
+  `}
 `;

@@ -25,7 +25,8 @@ Primary.args = {
   text: 'SAVE',
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
+export const Loading = Template.bind({});
+Loading.args = {
   text: 'SAVE',
+  loading: true,
 };
