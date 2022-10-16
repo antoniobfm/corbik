@@ -27,6 +27,8 @@ export const Container = styled.button`
 
   color: #E4E3E8;
 
+  transition: 0.3s all;
+
   :hover {
     background: linear-gradient(91.34deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #5A8DE5;
     cursor: pointer;
