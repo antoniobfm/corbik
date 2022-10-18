@@ -1,14 +1,8 @@
-// YourPage.stories.ts|tsx
-
 import React from 'react';
 
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import SignIn from '@/pages/signin';
-
-// import PageLayout from './PageLayout.stories';
-// import DocumentHeader from './DocumentHeader.stories';
-// import DocumentList from './DocumentList.stories';
 
 export default {
   title: 'Pages/SignIn',
