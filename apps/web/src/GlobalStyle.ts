@@ -74,7 +74,7 @@ export default createGlobalStyle`
     text-decoration: none;
   }
 
-  button, input, textarea, select {
+  button, input, textarea, select, span {
     font-family: 'futura-pt', Arial, Helvetica, sans-serif;
   }
 
