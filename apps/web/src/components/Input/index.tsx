@@ -6,11 +6,12 @@ import { Container, InputBox } from './styles';
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   name: string;
   label?: string;
+  description?: string;
   control: Control<any>;
   icon?: JSX.Element;
 }
 
-export const Input: React.FC<InputProps> = ({ control, name, label, icon, ...rest }: InputProps) => {
+export const Input: React.FC<InputProps> = ({ control, name, label, description, icon, ...rest }: InputProps) => {
   const [isFocused, setIsFocused] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -21,6 +22,7 @@ export const Input: React.FC<InputProps> = ({ control, name, label, icon, ...res
       render={({ field }) => (
         <Container>
           {label && <label>{label}</label>}
+          {description && <span>{description}</span>}
           <InputBox
             onClick={() => inputRef.current!.focus()}
             isFocused={isFocused}

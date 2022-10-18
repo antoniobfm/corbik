@@ -7,6 +7,7 @@ import { useForm } from 'react-hook-form';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { Input } from './index';
+import { KeyOutlined } from '../Icons';
 
 export default {
   title: 'Design System/Atoms/Input',
@@ -50,7 +51,10 @@ const Template: ComponentStory<typeof Input> = (args) => {
 export const Primary = Template.bind({});
 export const Filled = Template.bind({});
 export const Empty = Template.bind({});
+export const WithIcon = Template.bind({});
 export const WithLabel = Template.bind({});
+export const WithLabelAndDescription = Template.bind({});
+export const WithLabelAndDescriptionAndIcon = Template.bind({});
 
 Primary.args = {
   type: 'text',
@@ -70,9 +74,33 @@ Empty.args = {
   placeholder: 'Enter your email'
 };
 
+WithIcon.args = {
+  type: 'text',
+  name: 'name',
+  icon: <KeyOutlined />,
+  placeholder: 'Enter your email'
+};
+
 WithLabel.args = {
   type: 'text',
   name: 'name',
   label: 'Name',
+  placeholder: 'Enter your email'
+};
+
+WithLabelAndDescription.args = {
+  type: 'text',
+  name: 'name',
+  label: 'Name',
+  description: 'Use your best email, it will be useful when you need to recover your password 😌.',
+  placeholder: 'Enter your email'
+};
+
+WithLabelAndDescriptionAndIcon.args = {
+  type: 'text',
+  name: 'name',
+  label: 'Name',
+  description: 'Use your best email, it will be useful when you need to recover your password 😌.',
+  icon: <KeyOutlined />,
   placeholder: 'Enter your email'
 };

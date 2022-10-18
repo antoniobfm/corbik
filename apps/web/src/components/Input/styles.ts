@@ -15,6 +15,21 @@ export const Container = styled.div`
   padding: 0px;
   gap: 16px;
 
+  span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    /* Purple Secondary Text */
+
+    color: #9D99AD;
+
+    opacity: 0.5;
+
+    margin-top: -8px;
+  }
+
   label {
     font-style: normal;
     font-weight: 500;
