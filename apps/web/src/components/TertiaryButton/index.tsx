@@ -6,9 +6,9 @@ export interface TertiaryButtonProps extends React.ButtonHTMLAttributes<HTMLButt
   text: string;
 }
 
-export const TertiaryButton: React.FC<TertiaryButtonProps> = ({text}: TertiaryButtonProps) => {
+export const TertiaryButton: React.FC<TertiaryButtonProps> = ({ text, ...rest }: TertiaryButtonProps) => {
   return (
-    <Container>
+    <Container {...rest}>
       {text}
     </Container>
   )
