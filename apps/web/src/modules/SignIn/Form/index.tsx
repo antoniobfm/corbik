@@ -1,7 +1,6 @@
 import { Button } from '@/components/Button';
 import { KeyOutlined, SmsOutlined } from '@/components/Icons';
 import { Input } from '@/components/Input';
-import { Lock, Sms } from 'iconsax-react';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
