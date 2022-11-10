@@ -9,10 +9,10 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   loading?: boolean;
 }
 
-export const Button: React.FC<ButtonProps> = ({ text, loading }: ButtonProps) => {
+export const Button: React.FC<ButtonProps> = ({ text, loading, ...rest }: ButtonProps) => {
 
   return (
-    <Container isLoading={loading}>
+    <Container isLoading={loading} {...rest}>
       {loading ? <Loading /> : text}
     </Container>
   )
