@@ -1,7 +1,13 @@
-export default function Web() {
+import { Everything } from "@/components/Container/styles";
+import { Container } from "@/modules/Dashboard/styles";
+
+const Home: React.FC = () => {
   return (
-    <div>
-      <h1>Web</h1>
-    </div>
+    <Everything>
+      <Container>
+      </Container>
+    </Everything>
   );
 }
+
+export default Home;
