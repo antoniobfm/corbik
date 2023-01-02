@@ -1,0 +1,233 @@
+{
+  "carb": {
+    "name": "Carbohydrate",
+    "name_short": "Carb",
+    "unit": "gram",
+    "unit_short": "g",
+    "is_macro": true
+  },
+  "fat": {
+    "name": "Fat",
+    "name_short": "Fat",
+    "unit": "gram",
+    "unit_short": "g",
+    "is_macro": true
+  },
+  "prot": {
+    "name": "Protein",
+    "name_short": "Prot",
+    "unit": "gram",
+    "unit_short": "g",
+    "is_macro": true
+  },
+  "calorie": {
+    "name": "Calories",
+    "name_short": "Cal",
+    "unit": "kcal",
+    "unit_short": "kcal",
+    "is_macro": true
+  },
+  "vit_a": {
+    "name": "Vitamin A",
+    "name_short": "A",
+    "unit": "IU",
+    "unit_short": "International Unit",
+    "is_macro": false
+  },
+  "vit_c": {
+    "name": "Vitamin C",
+    "name_short": "C",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "vit_d": {
+    "name": "Vitamin D",
+    "name_short": "D",
+    "unit": "IU",
+    "unit_short": "International Unit",
+    "is_macro": false
+  },
+  "vit_e": {
+    "name": "Vitamin E",
+    "name_short": "E",
+    "unit": "IU",
+    "unit_short": "International Unit",
+    "is_macro": false
+  },
+  "vit_k": {
+    "name": "Vitamin K",
+    "name_short": "K",
+    "unit": "mcg",
+    "unit_short": "microgram",
+    "is_macro": false
+  },
+  "thiamin": {
+    "name": "Thiamin",
+    "name_short": "B1",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "riboflavin": {
+    "name": "Riboflavin",
+    "name_short": "B2",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "niacin": {
+    "name": "Niacin",
+    "name_short": "B3",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "pantothenic_acid": {
+    "name": "Pantothenic Acid",
+    "name_short": "B5",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "pyridoxine": {
+    "name": "Pyridoxine",
+    "name_short": "B6",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "folate": {
+    "name": "Folate",
+    "name_short": "B9",
+    "unit": "mcg",
+    "unit_short": "microgram",
+    "is_macro": false
+  },
+  "cobalamin": {
+    "name": "Cobalamin",
+    "name_short": "B12",
+    "unit": "mcg",
+    "unit_short": "microgram",
+    "is_macro": false
+  },
+  "choline": {
+    "name": "Choline",
+    "name_short": "Choline",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "betaine": {
+    "name": "Betaine",
+    "name_short": "Betaine",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "calcium": {
+    "name": "Calcium",
+    "name_short": "Ca",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "copper": {
+    "name": "Copper",
+    "name_short": "Cu",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "fluoride": {
+    "name": "Fluoride",
+    "name_short": "F",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "iodine": {
+    "name": "Iodine",
+    "name_short": "I",
+    "unit": "mcg",
+    "unit_short": "microgram",
+    "is_macro": false
+  },
+  "iron": {
+    "name": "Iron",
+    "name_short": "Fe",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "magnesium": {
+    "name": "Magnesium",
+    "name_short": "Mg",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "manganese": {
+    "name": "Manganese",
+    "name_short": "Mn",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "molybdenum": {
+    "name": "Molybdenum",
+    "name_short": "Mo",
+    "unit": "mcg",
+    "unit_short": "microgram",
+    "is_macro": false
+  },
+  "phosphorus": {
+    "name": "Phosphorus",
+    "name_short": "P",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "potassium": {
+    "name": "Potassium",
+    "name_short": "K",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "selenium": {
+    "name": "Selenium",
+    "name_short": "Se",
+    "unit": "mcg",
+    "unit_short": "microgram",
+    "is_macro": false
+  },
+  "sodium": {
+    "name": "Sodium",
+    "name_short": "Na",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "zinc": {
+    "name": "Zinc",
+    "name_short": "Zn",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "chrome": {
+    "name": "Chrome",
+    "name_short": "Zn",
+    "unit": "mg",
+    "unit_short": "milligram",
+    "is_macro": false
+  },
+  "iodo": {
+    "name": "Iodo",
+    "name_short": "I",
+    "unit": "mcg",
+    "unit_short": "microgram",
+    "is_macro": false
+  }
+}
