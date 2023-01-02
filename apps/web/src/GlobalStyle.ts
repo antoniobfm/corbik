@@ -25,10 +25,12 @@ export default createGlobalStyle`
 	:root {
 		font-size: 14px;
 
-		--carbs-color: #EB5757;
-		--protein-color: #2D9CDB;
-		--fat-color: #F2C94C;
-		--primary-color: aqua green;
+		--color-carb: 235, 87, 87;
+		--color-prot: 45, 156, 219;
+		--color-fat: 242, 201, 76;
+		--color-calorie: 39, 174, 96;
+		--color-micro: 156, 156, 156;
+		--color-primary: aqua green;
 
 		--corbik-green: #27AE60;
 
