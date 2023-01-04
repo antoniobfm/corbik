@@ -2,7 +2,22 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const MinifiedLog: React.FC = () => {
+interface MinifiedLogProps {
+  name: string;
+  amount: number;
+  unit: {
+    short_name: string;
+  }
+  calories: number;
+  macros: {
+    carbs: number;
+    proteins: number;
+    fats: number;
+  }
+  when: string;
+}
+
+const MinifiedLog: React.FC<MinifiedLogProps> = ({ name, amount, unit, calories, macros, when }: MinifiedLogProps) => {
   return (
     <Container 
       carbPerc={Math.floor(55)}
@@ -11,15 +26,15 @@ const MinifiedLog: React.FC = () => {
     >
       <div className="header">
         <div className="title">
-          <h4>Bacon em Fatias</h4>
-          <h5>17g - 71kcal</h5>
+          <h4>{name}</h4>
+          <h5>{amount}{unit.short_name} - {calories}kcal</h5>
         </div>
-        <time >09:09</time>
+        <time>09:09</time>
       </div>
 			<div className="card--macros">
-				<h4 style={{ color: "#EB5757" }}>C55</h4>
-				<h4 style={{ color: "#2D9CDB" }}>P25</h4>
-				<h4 style={{ color: "#F2C94C" }}>F37</h4>
+				<h4 style={{ color: "#EB5757" }}>C{macros.carbs}</h4>
+				<h4 style={{ color: "#2D9CDB" }}>P{macros.proteins}</h4>
+				<h4 style={{ color: "#F2C94C" }}>F{macros.fats}</h4>
 				<div className="pie"></div>
 			</div>
     </Container>
