@@ -27,7 +27,9 @@ export const Container = styled.div<IProps>`
       cursor: pointer;
 
       svg {
-
+        transition: 0.3s all;
+        
+        transform: ${props => props.orientation === 'horizontal' ? 'rotate(180deg)' : 'rotate(0deg)'};
       }
     }
   }
