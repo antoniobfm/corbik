@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container } from './styles';
 
-interface ListLogProps {
+interface VerticalLogProps {
   name: string;
   amount: number;
   unit: {
@@ -17,7 +17,7 @@ interface ListLogProps {
   when: string;
 }
 
-const ListLog: React.FC<ListLogProps> = ({ name, amount, unit, calories, macros, when }: ListLogProps) => {
+const VerticalLog: React.FC<VerticalLogProps> = ({ name, amount, unit, calories, macros, when }: VerticalLogProps) => {
   return (
     <Container>
       <div className="header">
@@ -32,4 +32,4 @@ const ListLog: React.FC<ListLogProps> = ({ name, amount, unit, calories, macros,
   )
 }
 
-export default ListLog;
+export default VerticalLog;

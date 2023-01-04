@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container } from './styles';
 
-interface MinifiedLogProps {
+interface HorizontalLogProps {
   name: string;
   amount: number;
   unit: {
@@ -17,7 +17,7 @@ interface MinifiedLogProps {
   when: string;
 }
 
-const MinifiedLog: React.FC<MinifiedLogProps> = ({ name, amount, unit, calories, macros, when }: MinifiedLogProps) => {
+const HorizontalLog: React.FC<HorizontalLogProps> = ({ name, amount, unit, calories, macros, when }: HorizontalLogProps) => {
   return (
     <Container 
       carbPerc={Math.floor(55)}
@@ -41,4 +41,4 @@ const MinifiedLog: React.FC<MinifiedLogProps> = ({ name, amount, unit, calories,
   )
 }
 
-export default MinifiedLog;
+export default HorizontalLog;

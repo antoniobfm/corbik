@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ListLog from './ListLog';
-import MinifiedLog from './MinifiedLog';
+import VerticalLog from './VerticalLog';
+import HorizontalLog from './HorizontalLog';
 
 import { Container } from './styles';
 
@@ -29,18 +29,18 @@ const LogList: React.FC = () => {
       <div className="logs">
         {orientation === "horizontal" && (
           <>
-            <MinifiedLog name='Fritas com Bacon' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
-            <MinifiedLog name='Chá HND Frutas Vermelhas' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
-            <MinifiedLog name='Ovo de galinha' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
-            <MinifiedLog name='Queijo Azul (Gorgonzola)' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
+            <HorizontalLog name='Fritas com Bacon' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
+            <HorizontalLog name='Chá Frutas Vermelhas' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
+            <HorizontalLog name='Ovo de galinha' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
+            <HorizontalLog name='Queijo Azul (Gorgonzola)' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
           </>
         )}
         {orientation === "vertical" && (
           <>
-            <ListLog name='Fritas com Bacon' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
-            <ListLog name='Chá HND Frutas Vermelhas' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
-            <ListLog name='Ovo de galinha' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
-            <ListLog name='Queijo Azul (Gorgonzola)' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
+            <VerticalLog name='Fritas com Bacon' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
+            <VerticalLog name='Chá Frutas Vermelhas' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
+            <VerticalLog name='Ovo de galinha' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
+            <VerticalLog name='Queijo Azul (Gorgonzola)' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
           </>
         )}
       </div>
