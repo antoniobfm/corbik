@@ -8,6 +8,7 @@ interface IProps {
 
 export const Container = styled.div<IProps>`
   min-width: 104px;
+  width: 104px;
   height: 80px;
 
   border: 1px solid rgba(34, 36, 37, 1);
@@ -37,6 +38,14 @@ export const Container = styled.div<IProps>`
         /* Primary Text */
 
         color: #E4E3E8;
+
+        max-height: 26px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+
       }
 
       h5 {
