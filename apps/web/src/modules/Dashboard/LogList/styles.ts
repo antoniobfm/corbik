@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+interface IProps {
+  orientation: 'vertical' | 'horizontal';
+}
+
+export const Container = styled.div<IProps>`
   display: flex;
   flex-direction: column;
 
@@ -32,9 +36,10 @@ export const Container = styled.div`
     padding: 0px 24px;
 
     overflow-x: scroll;
-
+    
     display: flex;
     gap: 16px;
+    flex-direction: ${props => props.orientation === 'vertical' ? 'column' : 'row'};
 
     &::-webkit-scrollbar {
       display: none;
