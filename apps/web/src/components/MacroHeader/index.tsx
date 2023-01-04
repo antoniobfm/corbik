@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Container } from './styles';
 import { Nutrient } from './Nutrient';
@@ -14,15 +14,21 @@ export interface IMacroHeaderProps {
 export type INutrients = keyof typeof nutrients;
 
 export const MacroHeader: React.FC<IMacroHeaderProps> = ({ carb, prot, fat, calorie }: IMacroHeaderProps) => {
+  const [display, setDisplay] = useState<"expanded" | "collapsed">("collapsed");
+  
+  const toggleDisplay = () => {
+    setDisplay(display === "collapsed" ? "expanded" : "collapsed");
+  }
+
   return (
-    <Container>
+    <Container display={display}>
       <div className="macros">
         <Nutrient type="carb" value={carb} />
         <Nutrient type="prot" value={prot} />
         <Nutrient type="fat" value={fat} />
       </div>
       <Nutrient type="calorie" value={calorie} />
-      <div className="micros">
+      <div className="micros" onClick={toggleDisplay}>
         <div className="vitamins">
           <h3>Vitamins</h3>
           <Nutrient type="vit_a" value={0} />
