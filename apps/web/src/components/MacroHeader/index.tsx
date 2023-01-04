@@ -24,6 +24,7 @@ export const MacroHeader: React.FC<IMacroHeaderProps> = ({ carb, prot, fat, calo
       <Nutrient type="calorie" value={calorie} />
       <div className="micros">
         <div className="vitamins">
+          <h3>Vitamins</h3>
           <Nutrient type="vit_a" value={0} />
           <Nutrient type="thiamin" value={0} />
           <Nutrient type="riboflavin" value={0} />
@@ -38,6 +39,7 @@ export const MacroHeader: React.FC<IMacroHeaderProps> = ({ carb, prot, fat, calo
           <Nutrient type="vit_k" value={0} />
         </div>
         <div className="minerals">
+          <h3>Minerals</h3>
           <Nutrient type="calcium" value={0} />
           <Nutrient type="copper" value={0} />
           <Nutrient type="chrome" value={0} />

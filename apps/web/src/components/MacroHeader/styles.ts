@@ -21,6 +21,22 @@ export const Container = styled.div`
 
     column-gap: 16px;
 
+    h3 {
+      font-family: 'Futura PT';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+
+      color: #F2F2F2;
+
+      opacity: 0.4;
+    }
+
     .vitamins {
       display: flex;
       justify-content: space-between;
