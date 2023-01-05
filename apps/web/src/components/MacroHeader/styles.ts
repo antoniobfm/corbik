@@ -41,7 +41,8 @@ export const Container = styled.div<IProps>`
       width: 100%;
       height: 100%;
       background: linear-gradient(180deg, rgba(12, 12, 13, 0) 0%, #0C0C0D 100%);
-      opacity: 0.7;
+      opacity: ${props => props.display === "expanded" ? "0" : "0.7"};
+      transition: 0.3s all;
     }
 
     h3 {
