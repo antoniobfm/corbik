@@ -1,8 +1,4 @@
-// YourComponent.stories.ts|tsx
-
 import React from 'react';
-
-import { UserSquare } from 'iconsax-react';
 
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
