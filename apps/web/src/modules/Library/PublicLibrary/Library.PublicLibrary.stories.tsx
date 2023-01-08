@@ -2,11 +2,11 @@ import React from 'react';
 
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import MyLibrary from './index';
+import PublicLibrary from './index';
 
 export default {
-  title: 'Pages/Library/MyLibrary',
-  component: MyLibrary,
+  title: 'Pages/Library/PublicLibrary',
+  component: PublicLibrary,
   decorators: [
     (Story) => (
       <div style={{ width: 414, margin: '3em' }}>
@@ -14,9 +14,9 @@ export default {
       </div>
     )
   ]
-} as ComponentMeta<typeof MyLibrary>;
+} as ComponentMeta<typeof PublicLibrary>;
 
-const Template: ComponentStory<typeof MyLibrary> = (args) => <MyLibrary {...args} />;
+const Template: ComponentStory<typeof PublicLibrary> = (args) => <PublicLibrary {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
