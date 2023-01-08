@@ -24,7 +24,7 @@ export const Container = styled.div`
     flex-direction: row;
 
     .icon {
-      margin-left: 14px;
+      margin-left: 24px;
     }
 
     input {
@@ -77,8 +77,8 @@ export const BarcodeButton = styled.button`
 	}
 
 	div {
-		padding-left: 16px;
-		padding-right: 16px;
+		padding-left: 19px;
+		padding-right: 15px;
 		height: 100%;
 		display: flex;
 		flex-direction: row;
