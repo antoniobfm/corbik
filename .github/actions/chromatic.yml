@@ -12,6 +12,9 @@ jobs:
   chromatic-deployment:
     # Operating System
     runs-on: ubuntu-latest
+    defaults: 
+      run:
+        working-directory: ./apps/web
     # Job steps
     steps:
       - uses: actions/checkout@v1
