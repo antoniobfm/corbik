@@ -18,7 +18,7 @@ export const DateInput: React.FC<InputProps> = ({
 }: InputProps) => {
 	return (
 		<Container>
-			<input />
+			<input {...rest} />
 			<label htmlFor={name} className="form__label">{labelName}</label>
 		</Container>
 	);
