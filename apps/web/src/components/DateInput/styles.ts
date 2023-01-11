@@ -10,8 +10,7 @@ export const Container = styled.div`
 
 	position: relative;
 	padding: 0 16px;
-	margin-bottom: 16px;
-
+	
 	border: 1px solid #222425;
 
 	input {
