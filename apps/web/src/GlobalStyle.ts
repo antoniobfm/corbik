@@ -80,6 +80,18 @@ export default createGlobalStyle`
     font-family: 'futura-pt', Arial, Helvetica, sans-serif;
   }
 
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
 	body:not(.user-is-tabbing) button:focus,
 	body:not(.user-is-tabbing) input:focus,
 	body:not(.user-is-tabbing) select:focus,
