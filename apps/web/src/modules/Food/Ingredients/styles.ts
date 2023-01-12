@@ -28,4 +28,23 @@ export const Container = styled.div`
       border: none;
     }
   }
+
+  button {
+    width: 100%;
+    height: 56px;
+
+    margin: auto;
+
+    background: none;
+    outline: none;
+    border: none;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #F2F2F2;
+  }
 `;
