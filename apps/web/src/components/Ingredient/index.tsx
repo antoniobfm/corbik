@@ -27,7 +27,7 @@ export const Ingredient: React.FC<IngredientsProps> = (ingredient: IngredientsPr
       </div>
       <div className="amount">
         <div className="macros">
-          <span>{ingredient.macros.calories}kcal</span>
+          <span>{ingredient.macros.calories} {ingredient.macros.calories > 1 ? "kcals" : "kcal"}</span>
           <span>C{ingredient.macros.carbs} P{ingredient.macros.prots} F{ingredient.macros.fats}</span>
         </div>
         <input type="number" defaultValue={ingredient.amount} />
