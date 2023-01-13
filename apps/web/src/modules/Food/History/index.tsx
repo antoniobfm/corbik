@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Container } from './styles';
 
@@ -14,8 +14,18 @@ export interface IProps {
 }
 
 const History: React.FC<IProps> = ({history}: IProps) => {
+  const [display, setDisplay] = useState<"expanded" | "collapsed">("collapsed");
+
+  const toggleDisplay = () => {
+    if (display === "collapsed") {
+      setDisplay("expanded");
+    } else {
+      setDisplay("collapsed");
+    }
+  }
+
   return (
-    <Container>
+    <Container onClick={toggleDisplay} display={display}>
       <h2>History</h2>
       <div className="list">
         {history.map((item) => (

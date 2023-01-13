@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+interface IProps { 
+  display: "expanded" | "collapsed" 
+}
+
+export const Container = styled.div<IProps>`
   display: flex;
   flex-direction: column;
   padding: 24px 0px;
-  gap: 16px;
+  gap: ${({ display }) => display === "expanded" ? "16px" : "0px"};
 
   background: #181A1B;
   border: 1px solid #222425;
@@ -25,6 +29,8 @@ export const Container = styled.div`
   }
 
   .list {
+    height: ${({ display }) => display === "expanded" ? "auto" : "0px"};
+    overflow: hidden;
 
     .item {
       display: flex;
