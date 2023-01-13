@@ -27,7 +27,6 @@ export const Container = styled.div`
   .list {
 
     .item {
-
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -36,6 +35,10 @@ export const Container = styled.div`
 
       background: #181A1B;
       border-bottom: 1px solid #222425;
+
+      :last-child {
+        border-bottom: none;
+      }
 
       h3 {
         font-style: normal;
