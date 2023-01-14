@@ -26,7 +26,10 @@ const History: React.FC<IProps> = ({history}: IProps) => {
 
   return (
     <Container onClick={toggleDisplay} display={display}>
-      <h2>History</h2>
+      <div className="header">
+        <h2>History</h2>
+        {display === "collapsed" && <h5>{history.length}</h5>}
+      </div>
       <div className="list">
         {history.map((item) => (
           <div className="item">
