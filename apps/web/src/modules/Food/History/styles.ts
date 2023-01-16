@@ -2,13 +2,13 @@ import styled from 'styled-components';
 
 interface IProps { 
   display: "expanded" | "collapsed" 
+  logsLength: number;
 }
 
 export const Container = styled.div<IProps>`
   display: flex;
   flex-direction: column;
   padding: 24px 0px;
-  gap: ${({ display }) => display === "expanded" ? "16px" : "0px"};
 
   background: #181A1B;
   border: 1px solid #222425;
@@ -53,7 +53,8 @@ export const Container = styled.div<IProps>`
   }
 
   .list {
-    height: ${({ display }) => display === "expanded" ? "auto" : "0px"};
+    transition: 0.3s all;
+    height: ${({ display, logsLength }) => display === "expanded" ? `${logsLength * 57}px` : "0px"};
     overflow: hidden;
 
     .item {
@@ -65,6 +66,10 @@ export const Container = styled.div<IProps>`
 
       background: #181A1B;
       border-bottom: 1px solid #222425;
+
+      :first-child {
+        padding-top: calc(16px + 24px);
+      }
 
       :last-child {
         border-bottom: none;

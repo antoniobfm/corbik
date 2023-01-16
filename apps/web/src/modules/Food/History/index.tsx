@@ -25,7 +25,7 @@ const History: React.FC<IProps> = ({history}: IProps) => {
   }
 
   return (
-    <Container onClick={toggleDisplay} display={display}>
+    <Container onClick={toggleDisplay} display={display} logsLength={history.length}>
       <div className="header">
         <h2>History</h2>
         {display === "collapsed" && <h5>{history.length}</h5>}
