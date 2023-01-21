@@ -19,6 +19,10 @@ export const Container = styled.div<IProps>`
     justify-content: space-between;
     align-items: center;
 
+    :hover {
+      cursor: pointer;
+    }
+
     h2 {
       padding-left: 24px;
 
