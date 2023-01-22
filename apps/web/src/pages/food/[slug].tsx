@@ -23,12 +23,27 @@ const history = [{
       name: "gram",
       short: "g"
     }
-  }]
+}]
+
+const units = [
+  {
+    id: "1",
+    name: "Gram",
+    short: "g",
+    default_amount: 100
+  },
+  {
+    id: "2",
+    name: "Medium Size",
+    short: "medium",
+    default_amount: 1
+  }
+]
 
 const Food: React.FC = () => {
   return (
     <Container>
-      <LogBar />
+      <LogBar units={units}/>
       <Header name="Banana" brand="Nature" />
       <MacroHeader carb={50} prot={20} fat={10} calorie={100} />
       <When />
