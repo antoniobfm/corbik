@@ -17,7 +17,8 @@ const LogBar: React.FC = () => {
           </div>
           <div className="unit">
             <select name="select" id="select_amount">
-              
+              <option value="gram">Grams</option>
+              <option value="medium_unit">Medium unit</option>
             </select>
           </div>
           <CreateButton>LOG IT</CreateButton>
