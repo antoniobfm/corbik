@@ -1,16 +1,12 @@
-// YourComponent.stories.ts|tsx
-
 import React from 'react';
-
-import { UserSquare } from 'iconsax-react';
 
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Result from './index';
+import FoodListing from './index';
 
 export default {
-  title: 'Pages/Library/Result',
-  component: Result,
+  title: 'Pages/Library/FoodListing',
+  component: FoodListing,
   decorators: [
     (Story) => (
       <div style={{ width: 414, margin: '3em' }}>
@@ -18,9 +14,9 @@ export default {
       </div>
     )
   ]
-} as ComponentMeta<typeof Result>;
+} as ComponentMeta<typeof FoodListing>;
 
-const Template: ComponentStory<typeof Result> = (args) => <Result {...args} />;
+const Template: ComponentStory<typeof FoodListing> = (args) => <FoodListing {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {

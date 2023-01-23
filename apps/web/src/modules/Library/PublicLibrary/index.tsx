@@ -1,5 +1,5 @@
 import React from 'react';
-import Result from '../Result';
+import FoodListing from '../FoodListing';
 
 import { Container, List } from './styles';
 
@@ -10,10 +10,10 @@ const PublicLibrary: React.FC = () => {
         <h2>Public Library</h2>
       </div>
       <List>
-        <Result name='Maçã' brand='Nature' macros={{carbs: 50, prots: 20, fats: 10}} calories={200} />
-        <Result name='Banana' brand='Nature' macros={{carbs: 50, prots: 20, fats: 10}} calories={200} />
-        <Result name='Abacaxi' brand='Nature' macros={{carbs: 50, prots: 20, fats: 10}} calories={200} />
-        <Result name='Maçã' brand='Nature' macros={{carbs: 50, prots: 20, fats: 10}} calories={200} />
+        <FoodListing name='Maçã' brand='Nature' macros={{carbs: 50, prots: 20, fats: 10}} calories={200} />
+        <FoodListing name='Banana' brand='Nature' macros={{carbs: 50, prots: 20, fats: 10}} calories={200} />
+        <FoodListing name='Abacaxi' brand='Nature' macros={{carbs: 50, prots: 20, fats: 10}} calories={200} />
+        <FoodListing name='Maçã' brand='Nature' macros={{carbs: 50, prots: 20, fats: 10}} calories={200} />
       </List>
     </Container>
   )
