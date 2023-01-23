@@ -13,7 +13,7 @@ export interface IProps {
   }
 }
 
-const FoodListing: React.FC<IProps> = ({ brand, name, calories, macros }: IProps) => {
+export const FoodListing: React.FC<IProps> = ({ brand, name, calories, macros }: IProps) => {
   return (
     <Container>
       <div className="title">
@@ -27,5 +27,3 @@ const FoodListing: React.FC<IProps> = ({ brand, name, calories, macros }: IProps
     </Container>
   )
 }
-
-export default FoodListing;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import FoodListing from './index';
+import { FoodListing } from './index';
 
 export default {
   title: 'Pages/Library/FoodListing',

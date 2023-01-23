@@ -1,5 +1,6 @@
 import React from 'react';
-import FoodListing from '../FoodListing';
+
+import { FoodListing } from '@/components/FoodListing';
 
 import { Container, List } from './styles';
 
