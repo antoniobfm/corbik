@@ -3,12 +3,19 @@ import React from 'react';
 import { FoodListing } from '../FoodListing';
 
 
-import { Container, Library } from './styles';
+import { Container, CurrentIngredient, Library } from './styles';
 
 export const AddIngredient: React.FC = () => {
 
   return (
     <Container>
+      <CurrentIngredient>
+        <div className="food">
+          <h5>Natureza</h5>
+          <h4>Banana</h4>
+        </div>
+        <span>CURRENT</span>
+      </CurrentIngredient>
       <Library>
         <FoodListing brand='Italiano' name='Parmegiano' macros={{ carbs: 5, prots: 2, fats: 3 }} calories={100} key='0' />
         <FoodListing brand='Mother Nature' name='Apple' macros={{ carbs: 5, prots: 2, fats: 3 }} calories={400} key='1' />
