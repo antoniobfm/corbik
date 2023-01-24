@@ -6,6 +6,36 @@ export const Container = styled.div`
   gap: 16px;
 `;
 
+export const Close = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  align-self: flex-end;
+
+  padding: 8px 16px;
+  gap: 8px;
+
+  width: 88px;
+  height: 33px;
+
+  background: #181A1B;
+  border: 1px solid #222425;
+  border-radius: 47px;
+
+  span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.5px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    color: #828282;
+  }
+`;
+
 export const CurrentIngredient = styled.div`
   height: 68px;
 
