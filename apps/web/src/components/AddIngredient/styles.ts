@@ -4,6 +4,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  height: 90vh;
 `;
 
 export const Close = styled.div`
@@ -113,11 +115,14 @@ export const CurrentIngredient = styled.div`
 `;
 
 export const Library = styled.div`
-  background: #181A1B;
-  border: 1px solid #222425;
-  border-radius: 6px;
+  position: relative;
+
+  padding-bottom: 56px;
 
   display: flex;
   flex-direction: column;
-  
+
+  background: #181A1B;
+  border: 1px solid #222425;
+  border-radius: 6px;
 `;
