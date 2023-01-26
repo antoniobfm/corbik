@@ -117,12 +117,27 @@ export const CurrentIngredient = styled.div`
 export const Library = styled.div`
   position: relative;
 
-  padding-bottom: 56px;
-
   display: flex;
   flex-direction: column;
 
   background: #181A1B;
   border: 1px solid #222425;
   border-radius: 6px;
+
+  .list {
+    height: calc(350px + 54px);
+    min-height: calc(350px + 54px);
+    max-height: calc(350px + 54px);
+
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 56px;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
 `;
