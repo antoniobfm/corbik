@@ -7,6 +7,7 @@ import When from '@/modules/Food/When';
 import Ingredients from '@/modules/Food/Ingredients';
 import History from '@/modules/Food/History';
 import LogBar from '@/modules/Food/LogBar';
+import Footer from '@/modules/Food/Footer';
 
 const history = [{
   when: "2021-01-01",
@@ -49,6 +50,7 @@ const Food: React.FC = () => {
       <When />
       <Ingredients />
       <History history={history} />
+      <Footer />
     </Container>
   )
 }
