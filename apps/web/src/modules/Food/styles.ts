@@ -6,4 +6,9 @@ export const Container = styled.div`
   gap: 24px;
 
   padding-bottom: 20vh;
+
+  // Affects MacroHeader component, or it is supposed to
+  > div:nth-child(3) {
+    margin-bottom: -24px;
+  }
 `;
