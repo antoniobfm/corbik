@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { Container, Menu, CreateButton } from './styles';
+import { Container, Menu, ConfirmActionButton, UpdateActionButton } from './styles';
 
 export interface LogBarProps {
+  type: 'create' | 'update';
   units: {
     id: string;
     name: string;
@@ -11,8 +12,7 @@ export interface LogBarProps {
   }[]
 }
 
-const LogBar: React.FC<LogBarProps> = ({units}: LogBarProps) => {
-
+const LogBar: React.FC<LogBarProps> = ({ units, type }: LogBarProps) => {
   return (
     <Container>
       <div>
@@ -33,7 +33,12 @@ const LogBar: React.FC<LogBarProps> = ({units}: LogBarProps) => {
               ))}
             </select>
           </div>
-          <CreateButton>LOG IT</CreateButton>
+          {type === 'create' && (
+            <ConfirmActionButton>LOG IT</ConfirmActionButton>
+          )}
+          {type === 'update' && (
+            <UpdateActionButton>UPDATE</UpdateActionButton>
+          )}
         </Menu>
       </div>
     </Container>

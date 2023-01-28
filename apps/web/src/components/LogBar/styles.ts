@@ -102,7 +102,7 @@ export const Menu = styled.div`
   }
 `;
 
-export const CreateButton = styled.button`
+export const ConfirmActionButton = styled.button`
   min-width: 35%;
   height: 56px;
 
@@ -113,4 +113,17 @@ export const CreateButton = styled.button`
   font-size: 12px;
   font-weight: 600;
   color: #D5F6E3;
+`;
+
+export const UpdateActionButton = styled.button`
+  min-width: 35%;
+  height: 56px;
+
+  background: linear-gradient(111.07deg, #F2C94C 0%, rgba(242, 201, 76, 0.5) 100%), #181A1B;
+  border: 1px solid #F2C94C;
+  border-radius: 6px;
+
+  font-size: 12px;
+  font-weight: 600;
+  color: #F3F6D5;
 `;
