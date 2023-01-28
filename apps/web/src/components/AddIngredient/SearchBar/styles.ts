@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-
   position: absolute;
   bottom: 0;
   left: 0;
@@ -19,6 +18,7 @@ export const Container = styled.div`
   border: 1px solid rgba(34, 36, 37, 0.5);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 6px 6px;
+  
   input {
     width: 100%;
     height: 100%;
