@@ -11,10 +11,10 @@ const PublicLibrary: React.FC = () => {
         <h2>Public Library</h2>
       </div>
       <List>
-        <FoodListing name='Maçã' brand='Nature' macros={{carbs: 50, prots: 20, fats: 10}} calories={200} />
-        <FoodListing name='Banana' brand='Nature' macros={{carbs: 50, prots: 20, fats: 10}} calories={200} />
-        <FoodListing name='Abacaxi' brand='Nature' macros={{carbs: 50, prots: 20, fats: 10}} calories={200} />
-        <FoodListing name='Maçã' brand='Nature' macros={{carbs: 50, prots: 20, fats: 10}} calories={200} />
+        <FoodListing name='Maçã' brand='Nature' macros={{carbs: 50, prots: 20, fats: 10}} onClick={() => router.push('/food/test')} />
+        <FoodListing name='Banana' brand='Nature' macros={{carbs: 50, prots: 20, fats: 10}} onClick={() => router.push('/food/test')} />
+        <FoodListing name='Abacaxi' brand='Nature' macros={{carbs: 50, prots: 20, fats: 10}} onClick={() => router.push('/food/test')} />
+        <FoodListing name='Maçã' brand='Nature' macros={{carbs: 50, prots: 20, fats: 10}} onClick={() => router.push('/food/test')} />
       </List>
     </Container>
   )
