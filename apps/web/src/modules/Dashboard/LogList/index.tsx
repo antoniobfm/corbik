@@ -3,6 +3,7 @@ import VerticalLog from './VerticalLog';
 import HorizontalLog from './HorizontalLog';
 
 import { Container } from './styles';
+import Link from 'next/link';
 
 const LogList: React.FC = () => {
   const [orientation, setOrientation] = useState<"vertical" | "horizontal">("vertical");
@@ -45,7 +46,9 @@ const LogList: React.FC = () => {
         )}
       </div>
       <div className="add-log">
-        <span>ADD LOG</span>
+        <Link href="/library">
+          <span>ADD LOG</span>
+        </Link>
       </div>
     </Container>
   )
