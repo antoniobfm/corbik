@@ -50,4 +50,10 @@ export const Container = styled.div`
 
     opacity: 0.5;
   }
+
+  .macros {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 `;
