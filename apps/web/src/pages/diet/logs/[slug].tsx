@@ -8,6 +8,7 @@ import { MacroHeader } from '@/components/MacroHeader';
 import When from '@/modules/Logs/When';
 import History from '@/modules/Logs/History';
 import { history } from '@/data/history';
+import Footer from '@/modules/Logs/Footer';
 
 const logs: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const logs: React.FC = () => {
       <MacroHeader carb={50} prot={20} fat={10} calorie={100} />
       <When />
       <History history={history} />
+      <Footer />
     </Container>
   )
 }
