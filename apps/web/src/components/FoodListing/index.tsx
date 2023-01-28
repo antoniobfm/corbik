@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container } from './styles'
 
-export interface IProps {
+export interface IProps extends React.HTMLAttributes<HTMLDivElement> {
   name: string;
   brand: string;
   calories: number;
@@ -13,9 +13,9 @@ export interface IProps {
   }
 }
 
-export const FoodListing: React.FC<IProps> = ({ brand, name, calories, macros }: IProps) => {
+export const FoodListing: React.FC<IProps> = ({ brand, name, calories, macros, ...rest }: IProps) => {
   return (
-    <Container>
+    <Container {...rest}>
       <div className="title">
         <h5>{brand}</h5>
         <h4>{name}</h4>
