@@ -6,40 +6,11 @@ import Header from '@/modules/Food/Header';
 import When from '@/modules/Food/When';
 import Ingredients from '@/modules/Food/Ingredients';
 import History from '@/modules/Food/History';
-import Footer from '@/modules/Food/Footer';
-import LogBar from '@/components/LogBar';
+import Footer from '@/modules/Food/Footer'
+import LogBar from '@/components/LogBar';;
 
-const history = [{
-  when: "2021-01-01",
-  amount: 100,
-  unit: {
-    name: "gram",
-    short: "g"
-  }
-  },
-  {
-    when: "2021-01-02",
-    amount: 200,
-    unit: {
-      name: "gram",
-      short: "g"
-    }
-}]
-
-const units = [
-  {
-    id: "1",
-    name: "Gram",
-    short: "g",
-    default_amount: 100
-  },
-  {
-    id: "2",
-    name: "Medium Size",
-    short: "medium",
-    default_amount: 1
-  }
-]
+import { units } from '@/data/units';
+import { history } from '@/data/history';
 
 const Food: React.FC = () => {
   return (
