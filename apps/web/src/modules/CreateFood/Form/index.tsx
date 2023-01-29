@@ -1,14 +1,16 @@
 import React from 'react';
+import Macronutrients from './Macronutrients';
 
 import { Container } from './styles';
 import Summary from './Summary';
+import Units from './Units';
 
 const Form: React.FC = () => {
   return (
     <Container>
-      <form>
-        <Summary />
-      </form>
+      <Summary />
+      <Macronutrients />
+      <Units />
     </Container>
   )
 }
