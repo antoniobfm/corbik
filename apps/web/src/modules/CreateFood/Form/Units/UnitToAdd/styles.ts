@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`display: flex;
+export const Container = styled.div`
+  margin: 0 24px;
+
+  flex: 1;
+
   display: flex;
   flex-direction: column;
 
