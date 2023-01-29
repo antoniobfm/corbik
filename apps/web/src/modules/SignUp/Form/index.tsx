@@ -22,7 +22,7 @@ export const Form: React.FC = () => {
       <Input 
         type="email"
         name="email"
-        label="Email address"
+        label={{ text: 'Email address' }}
         description="Use your best email, it will be useful when you need to recover your password 😌."
         placeholder="Email" 
         control={control} 

@@ -5,7 +5,10 @@ import { Container, InputBox } from './styles';
 
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   name: string;
-  label?: string;
+  label?: {
+    text: string;
+    position?: 'header' | 'inside';
+  }
   description?: string;
   control: Control<any>;
   icon?: JSX.Element;
@@ -21,7 +24,7 @@ export const Input: React.FC<InputProps> = ({ control, name, label, description,
       control={control}
       render={({ field }) => (
         <Container>
-          {label && <label>{label}</label>}
+          {label && <label>{label.text}</label>}
           {description && <span>{description}</span>}
           <InputBox
             onClick={() => inputRef.current!.focus()}

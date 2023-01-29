@@ -21,7 +21,7 @@ export const Form: React.FC = () => {
       <Input 
         type="email"
         name="email"
-        label="Email address" 
+        label={{ text: 'Email address' }}
         placeholder="Email" 
         control={control} 
         icon={<SmsOutlined />} 
@@ -29,7 +29,7 @@ export const Form: React.FC = () => {
       <Input 
         type="password" 
         name="password" 
-        label="Password" 
+        label={{ text: 'Password' }}
         placeholder="Password"
         control={control}
         icon={<KeyOutlined />}

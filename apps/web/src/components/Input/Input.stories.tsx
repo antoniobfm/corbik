@@ -84,14 +84,18 @@ WithIcon.args = {
 WithLabel.args = {
   type: 'text',
   name: 'name',
-  label: 'Name',
+  label: {
+    text: 'Name'
+  },
   placeholder: 'Enter your email'
 };
 
 WithLabelAndDescription.args = {
   type: 'text',
   name: 'name',
-  label: 'Name',
+  label: {
+    text: 'Name'
+  },
   description: 'Use your best email, it will be useful when you need to recover your password 😌.',
   placeholder: 'Enter your email'
 };
@@ -99,7 +103,9 @@ WithLabelAndDescription.args = {
 WithLabelAndDescriptionAndIcon.args = {
   type: 'text',
   name: 'name',
-  label: 'Name',
+  label: {
+    text: 'Name'
+  },
   description: 'Use your best email, it will be useful when you need to recover your password 😌.',
   icon: <KeyOutlined />,
   placeholder: 'Enter your email'

@@ -20,7 +20,7 @@ export const Form: React.FC = () => {
       <Input
         type="email"
         name="email"
-        label="Email address" 
+        label={{ text: 'Email' }}
         description='No problem! We will send you a link to recover your password.'
         placeholder="Email" 
         control={control} 
