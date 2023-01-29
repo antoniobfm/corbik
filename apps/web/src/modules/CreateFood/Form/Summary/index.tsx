@@ -9,7 +9,15 @@ const Summary: React.FC = () => {
 
   return (
     <Container>
-      <Input name="name" type="text" placeholder="teste" control={control} />
+      <Input 
+        name="name"
+        label={{
+          text: 'Name',
+          position: 'inside'
+        }}
+        type="text" 
+        placeholder="teste" 
+        control={control} />
     </Container>
   )
 }
