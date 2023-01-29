@@ -5,6 +5,7 @@ import Header from '@/modules/Library/Header';
 import MyLibrary from '@/modules/Library/MyLibrary';
 import PublicLibrary from '@/modules/Library/PublicLibrary';
 import SearchBar from '@/modules/Library/SearchBar';
+import { Navbar } from '@/components/Navbar';
 
 const Library: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Library: React.FC = () => {
       <SearchBar />
       <MyLibrary />
       <PublicLibrary />
+      <Navbar active="library" />
     </Container>
   )
 }
