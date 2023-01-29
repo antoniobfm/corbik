@@ -11,6 +11,7 @@ const Units: React.FC = () => {
         <UnitListing name="Grams" amount={100} />
         <UnitListing name="Grams" amount={100} />
       </div>
+      <button type="button">ADD UNIT</button>
     </Container>
   )
 }
