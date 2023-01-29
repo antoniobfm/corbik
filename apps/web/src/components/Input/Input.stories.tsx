@@ -53,6 +53,7 @@ export const Filled = Template.bind({});
 export const Empty = Template.bind({});
 export const WithIcon = Template.bind({});
 export const WithLabel = Template.bind({});
+export const WithLabelInside = Template.bind({});
 export const WithLabelAndDescription = Template.bind({});
 export const WithLabelAndDescriptionAndIcon = Template.bind({});
 
@@ -86,6 +87,16 @@ WithLabel.args = {
   name: 'name',
   label: {
     text: 'Name'
+  },
+  placeholder: 'Enter your email'
+};
+
+WithLabelInside.args = {
+  type: 'text',
+  name: 'name',
+  label: {
+    text: 'Name',
+    position: 'inside'
   },
   placeholder: 'Enter your email'
 };

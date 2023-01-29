@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components';
 
-interface Props {
-  isFocused: boolean;
-  isFilled: boolean;
-  hasIcon: boolean;
+interface IContainerProps {
+  labelPosition?: 'header' | 'inside';
 }
 
-export const Container = styled.div`
+export const Container = styled.div<IContainerProps>`
   width: 100%;
+
+  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -45,10 +45,46 @@ export const Container = styled.div`
 
     text-shadow: 0px 0px 77px #E4E3E8;
   }
+
+  ${props =>
+    props.labelPosition === 'inside' && css`
+      > div {
+        background: transparent;
+      }
+
+      label {
+        position: absolute;
+
+        padding: 0 4px;
+
+        top: 0;
+        left: 0;
+        margin-top: -6px;
+        margin-left: 16px;
+
+        background: #181A1B;
+
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10.5px;
+        line-height: 13px;
+
+        /* Purple Primary Text */
+
+        color: #E4E3E8;
+      }
+  `}
 `;
 
+interface IInputBoxProps {
+  isFocused: boolean;
+  isFilled: boolean;
+  hasIcon: boolean;
+}
 
-export const InputBox = styled.div<Props>`
+
+export const InputBox = styled.div<IInputBoxProps>`
   width: 100%;
 
   display: flex;

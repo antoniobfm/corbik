@@ -23,7 +23,7 @@ export const Input: React.FC<InputProps> = ({ control, name, label, description,
       name={name}
       control={control}
       render={({ field }) => (
-        <Container>
+        <Container labelPosition={label?.position}>
           {label && <label>{label.text}</label>}
           {description && <span>{description}</span>}
           <InputBox
