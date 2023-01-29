@@ -1,8 +1,4 @@
-// YourComponent.stories.ts|tsx
-
 import React from 'react';
-
-import { UserSquare } from 'iconsax-react';
 
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
@@ -22,8 +18,13 @@ export default {
 
 const Template: ComponentStory<typeof Navbar> = (args) => <Navbar {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
-  text: 'Sign In',
-  icon: <UserSquare size={16} variant="Bulk" color="white" />
+export const Diet = Template.bind({});
+export const Library = Template.bind({});
+
+Diet.args = {
+  active: 'diet'
+};
+
+Library.args = {
+  active: 'library'
 };
