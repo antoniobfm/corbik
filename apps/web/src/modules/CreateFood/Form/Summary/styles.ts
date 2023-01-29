@@ -13,3 +13,12 @@ export const Container = styled.div`
   background: #181A1B;
   border: 1px solid #222425;
 `;
+
+export const DoubleColumn = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+`;
+
