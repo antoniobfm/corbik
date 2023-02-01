@@ -6,13 +6,13 @@ import React, { useState } from 'react';
 import { Container } from './styles';
 
 const Ingredients: React.FC = () => {
-  const [active, setActive] = useState(false);
+  const [isModalActive, setIsModalActive] = useState(false);
 
   return (
     <>
-      {active && (
-        <Modal setActive={setActive}>
-          <AddIngredient />
+      {isModalActive && (
+        <Modal setActive={setIsModalActive}>
+          <AddIngredient setIsModalActive={setIsModalActive} />
         </Modal>
       )}
       <Container>
@@ -21,7 +21,7 @@ const Ingredients: React.FC = () => {
           <Ingredient name="Banana" brand="Nature" macros={{ calories: 200, carbs: 20, prots: 10, fats: 5 }} unit={{ name: "gram", short: "g" }} amount={100} />
           <Ingredient name="Apple" brand="Nature" macros={{ calories: 24, carbs: 7, prots: 1.5, fats: 0.1 }} unit={{ name: "gram", short: "g" }} amount={100} />
         </div>
-        <button type="button" onClick={() => setActive(true)}>
+        <button type="button" onClick={() => setIsModalActive(true)}>
           ADD INGREDIENT
         </button>
       </Container>
