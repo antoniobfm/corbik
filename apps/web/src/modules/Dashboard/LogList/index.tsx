@@ -4,9 +4,12 @@ import HorizontalLog from './HorizontalLog';
 
 import { Container } from './styles';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const LogList: React.FC = () => {
   const [orientation, setOrientation] = useState<"vertical" | "horizontal">("vertical");
+
+  const router = useRouter();
 
   const handleOrientation = () => {
     if (orientation === "vertical") {
@@ -30,18 +33,18 @@ const LogList: React.FC = () => {
       <div className="logs">
         {orientation === "horizontal" && (
           <>
-            <HorizontalLog name='Fritas com Bacon' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
-            <HorizontalLog name='Chá Frutas Vermelhas' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
-            <HorizontalLog name='Ovo de galinha' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
-            <HorizontalLog name='Queijo Azul (Gorgonzola)' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
+            <HorizontalLog name='Fritas com Bacon' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} onClick={() => router.push('/diet/logs/banana')} />
+            <HorizontalLog name='Chá Frutas Vermelhas' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} onClick={() => router.push('/diet/logs/banana')} />
+            <HorizontalLog name='Ovo de galinha' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} onClick={() => router.push('/diet/logs/banana')} />
+            <HorizontalLog name='Queijo Azul (Gorgonzola)' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} onClick={() => router.push('/diet/logs/banana')} />
           </>
         )}
         {orientation === "vertical" && (
           <>
-            <VerticalLog name='Fritas com Bacon' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
-            <VerticalLog name='Chá Frutas Vermelhas' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
-            <VerticalLog name='Ovo de galinha' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
-            <VerticalLog name='Queijo Azul (Gorgonzola)' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} />
+            <VerticalLog name='Fritas com Bacon' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} onClick={() => router.push('/diet/logs/banana')} />
+            <VerticalLog name='Chá Frutas Vermelhas' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} onClick={() => router.push('/diet/logs/banana')} />
+            <VerticalLog name='Ovo de galinha' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} onClick={() => router.push('/diet/logs/banana')} />
+            <VerticalLog name='Queijo Azul (Gorgonzola)' amount={15} unit={{ short_name: "g" }} calories={200} macros={{ carbs: 15, proteins: 20, fats: 15 }} when={""} onClick={() => router.push('/diet/logs/banana')} />
           </>
         )}
       </div>
