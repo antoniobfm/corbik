@@ -15,4 +15,8 @@ export const Container = styled.div`
   z-index: 10;
 
   background: rgba(0, 0, 0, 0.75);
+
+  > div {
+    flex: 1;
+  }
 `;
