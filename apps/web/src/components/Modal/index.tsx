@@ -1,14 +1,13 @@
-import React, { DetailedHTMLProps, HTMLAttributes, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import { Container } from './styles';
 
 interface IModalProps {
   children: React.ReactNode;
-  active: boolean;
   setActive: (active: boolean) => void;
 }
 
-const Modal: React.FC<IModalProps> = ({ children, active, setActive }: IModalProps) => {
+const Modal: React.FC<IModalProps> = ({ children, setActive }: IModalProps) => {
 	// : Modal Management
 	const node = useRef<HTMLDivElement>()
 
