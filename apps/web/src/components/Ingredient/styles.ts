@@ -10,6 +10,12 @@ export const Container = styled.div`
   background: #181A1B;
   border-bottom: 1px solid #222425;
 
+  transition: 0.3s all;
+
+  :hover {
+    background: #262A2B
+  }
+
   .header {
     display: flex;
     flex-direction: column;
