@@ -1,6 +1,15 @@
-<div position="center">
-  <img position="center" width="50%" src="./docs/assets/logo.png" />
+<div align="center">
+  <img align="center" width="50%" src="./docs/assets/logo.png" />
 </div>
+
+<p align="center">
+  <a aria-label="Storybook UI documentation link" href="https://main--63ba0f9702e6a6fde3fe2a05.chromatic.com/">
+    <img src="https://img.shields.io/badge/UI%20Documentation-Storybook-FF4785?style=for-the-badge">
+  </a>
+  <!-- <a aria-label="License" href="https://github.com/vercel/next.js/blob/canary/license.md">
+    <img alt="" src="https://img.shields.io/npm/l/next.svg?style=for-the-badge&labelColor=000000">
+  </a> -->
+</p>
 
 ## Running on your machine
 
