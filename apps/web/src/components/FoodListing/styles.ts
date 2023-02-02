@@ -11,8 +11,14 @@ export const Container = styled.div`
 
   border-bottom: 1px solid #222425;
 
+  transition: 0.3s all;
+
   :last-child {
     border-bottom: none;
+  }
+
+  :hover {
+    background: #262A2B;
   }
 
   .title {
