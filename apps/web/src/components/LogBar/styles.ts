@@ -103,6 +103,7 @@ export const Menu = styled.div`
 `;
 
 export const ConfirmActionButton = styled.button`
+  flex: 1;
   min-width: 35%;
   height: 56px;
 
