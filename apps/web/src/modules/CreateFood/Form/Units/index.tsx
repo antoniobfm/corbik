@@ -6,7 +6,7 @@ import { UnitListing } from './UnitListing';
 import UnitToAdd from './UnitToAdd';
 
 const Units: React.FC = () => {
-  const [active, setActive] = useState(true)
+  const [active, setActive] = useState(false)
 
   return (
     <>
