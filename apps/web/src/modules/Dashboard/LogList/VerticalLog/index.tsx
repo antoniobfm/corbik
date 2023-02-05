@@ -15,11 +15,12 @@ interface VerticalLogProps {
     fats: number;
   }
   when: string;
+  onClick: () => void;
 }
 
-const VerticalLog: React.FC<VerticalLogProps> = ({ name, amount, unit, calories, macros, when }: VerticalLogProps) => {
+const VerticalLog: React.FC<VerticalLogProps> = ({ name, amount, unit, calories, macros, when, onClick }: VerticalLogProps) => {
   return (
-    <Container>
+    <Container onClick={onClick}>
       <div className="header">
         <time>20:00</time>
         <div className="title">

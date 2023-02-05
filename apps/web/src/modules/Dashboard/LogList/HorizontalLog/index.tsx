@@ -15,14 +15,16 @@ interface HorizontalLogProps {
     fats: number;
   }
   when: string;
+  onClick: () => void;
 }
 
-const HorizontalLog: React.FC<HorizontalLogProps> = ({ name, amount, unit, calories, macros, when }: HorizontalLogProps) => {
+const HorizontalLog: React.FC<HorizontalLogProps> = ({ name, amount, unit, calories, macros, when, onClick }: HorizontalLogProps) => {
   return (
     <Container 
       carbPerc={Math.floor(55)}
       protsPerc={Math.floor(35)}
       fatPerc={Math.floor(25)}
+      onClick={onClick}
     >
       <div className="header">
         <div className="title">
