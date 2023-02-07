@@ -17,7 +17,7 @@ const ConfirmBar: React.FC = () => {
           </svg>
           </GoBack>
           <ConfirmActionButton>
-            CREATE
+            CREATE FOOD
           </ConfirmActionButton>
         </Menu>
       </div>
